@@ -15,9 +15,30 @@ const Navbar = () => {
             <li>Pricing</li>
           </ul>
         </div>
+        <div className="hidden md:flex pr-4">
+          <button className="border-none bg-transparent text-black mr-4">
+            Sign In
+          </button>
+          <button className="px-8 py-3">Sign Up</button>
+        </div>
+        <div className="md:hidden">
+          <MenuIcon className="w-5" />
+          <XIcon className="w-5" />
+        </div>
       </div>
-      <MenuIcon className="w-5" />
-      <XIcon className="w-5" />
+      <ul className="absolute bg-zinc-200 w-full px-8">
+        <li className="border-b-2 border-zinc-300 w-full">Home</li>
+        <li className="border-b-2 border-zinc-300 w-full">About</li>
+        <li className="border-b-2 border-zinc-300 w-full">Support</li>
+        <li className="border-b-2 border-zinc-300 w-full">Platforms</li>
+        <li className="border-b-2 border-zinc-300 w-full">Pricing</li>
+        <div className="flex flex-col my-4">
+          <button className="bg-transparent text-indigo-600 px-8 py-3 mr-4">
+            Sign In
+          </button>
+          <button className="px-8 py-3">Sign Up</button>
+        </div>
+      </ul>
     </div>
   );
 };
