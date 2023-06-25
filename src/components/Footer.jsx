@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaTwitter,
+  FaTwitch,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -56,6 +63,16 @@ const Footer = () => {
             />
             <button className="p-2 mb-4">Subscribe</button>
           </form>
+        </div>
+      </div>
+      <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
+        <p className="py-4">2022 Workflow, LLC. All rights reserved</p>
+        <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
+          <FaFacebook />
+          <FaInstagram />
+          <FaTwitter />
+          <FaTwitch />
+          <FaGithub />
         </div>
       </div>
     </div>
