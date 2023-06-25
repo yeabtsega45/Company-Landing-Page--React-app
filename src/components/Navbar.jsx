@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const handleClose = () => setNav(!nav);
+  const handleClose = () => setNav(false);
 
   return (
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
@@ -14,27 +14,56 @@ const Navbar = () => {
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
           <ul className="hidden md:flex">
             <li>
-              <Link to="home" smooth={true} duration={500}>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="about" smooth={true} offset={-200} duration={500}>
+              <Link
+                to="about"
+                smooth={true}
+                offset={-200}
+                duration={500}
+                className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="support" smooth={true} offset={-50} duration={500}>
+              <Link
+                to="support"
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
+              >
                 Support
               </Link>
             </li>
             <li>
-              <Link to="platforms" smooth={true} offset={-100} duration={500}>
+              <Link
+                to="platforms"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
+              >
                 Platforms
               </Link>
             </li>
             <li>
-              <Link to="pricing" smooth={true} offset={-50} duration={500}>
+              <Link
+                to="pricing"
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
+              >
                 Pricing
               </Link>
             </li>
@@ -52,7 +81,13 @@ const Navbar = () => {
       </div>
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
         <li className="border-b-2 border-zinc-300 w-full">
-          <Link onClick={handleClose} to="home" smooth={true} duration={500}>
+          <Link
+            onClick={handleClose}
+            to="home"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
+          >
             Home
           </Link>
         </li>
@@ -63,6 +98,7 @@ const Navbar = () => {
             smooth={true}
             offset={-200}
             duration={500}
+            className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
           >
             About
           </Link>
@@ -74,6 +110,7 @@ const Navbar = () => {
             smooth={true}
             offset={-50}
             duration={500}
+            className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
           >
             Support
           </Link>
@@ -85,6 +122,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={500}
+            className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
           >
             Platforms
           </Link>
@@ -96,6 +134,7 @@ const Navbar = () => {
             smooth={true}
             offset={-50}
             duration={500}
+            className="cursor-pointer hover:pb-3 hover:border-b-[3px] hover:border-solid hover:border-indigo-500"
           >
             Pricing
           </Link>
