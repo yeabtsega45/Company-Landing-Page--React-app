@@ -33,6 +33,30 @@ const Footer = () => {
             <li className="py-1">Partners</li>
           </ul>
         </div>
+        <div>
+          <h6 className="font-bold uppercase pt-2">Legal</h6>
+          <ul>
+            <li className="py-1">Claims</li>
+            <li className="py-1">Privacy</li>
+            <li className="py-1">Terms</li>
+            <li className="py-1">Policies</li>
+            <li className="py-1">Conditions</li>
+          </ul>
+        </div>
+        <div className="col-span-2 pt-8 md:pt-2">
+          <p className="font-bold uppercase">Subscribe to our newsletter</p>
+          <p className="py-4">
+            The latest news, articles, and resources, sent to your inbox weekly.
+          </p>
+          <form className="flex flex-col sm:flex-row">
+            <input
+              className="w-full p-2 mr-4 rounded-md mb-4"
+              type="email"
+              placeholder="Enter email.."
+            />
+            <button className="p-2 mb-4">Subscribe</button>
+          </form>
+        </div>
       </div>
     </div>
   );
