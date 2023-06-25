@@ -14,6 +14,25 @@ const Footer = () => {
             <li className="py-1">Cloud</li>
           </ul>
         </div>
+        <div>
+          <h6 className="font-bold uppercase pt-2">Support</h6>
+          <ul>
+            <li className="py-1">Pricing</li>
+            <li className="py-1">Documentation</li>
+            <li className="py-1">Guides</li>
+            <li className="py-1">API Status</li>
+          </ul>
+        </div>
+        <div>
+          <h6 className="font-bold uppercase pt-2">Company</h6>
+          <ul>
+            <li className="py-1">About</li>
+            <li className="py-1">Blog</li>
+            <li className="py-1">Jobs</li>
+            <li className="py-1">Press</li>
+            <li className="py-1">Partners</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
